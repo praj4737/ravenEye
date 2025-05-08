@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenEye - Autonomous Electronic Warfare Drones & Surveillance Satellites</title>
+    <meta name="description"
+        content="Cutting-edge autonomous drones and satellite constellations for electronic warfare and reconnaissance operations. AI-powered solutions for GPS-denied environments.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Refined color palette
+                        primary: "#111827", // Deeper, more sophisticated dark
+                        accent: "#4f46e5", // A more vibrant, tech-focused purple
+                        accentLight: "#6d28d9",
+                        dark: "#0B1220",
+                        light: "#f3f4f6",
+                        gray: "#6B7280",
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'], // A more modern sans-serif
+                        mono: ['"Fira Code"', 'monospace']  // A popular monospace font for tech
+                    },
+                    // Added animation keyframes (subtle fade-in)
+                    keyframes: {
+                        fadein: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                    },
+                    animation: {
+                        fadein: 'fadein 0.5s ease-out forwards',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Fira+Code:wght@400;500;600&display=swap');
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #111827 0%, #1F2937 100%);
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(circle at 25% 50%, rgba(79, 70, 229, 0.1) 0%, transparent 50%);
+        }
+
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-primary text-light">
+
+    <header class="fixed w-full z-50 gradient-bg shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <i class="fas fa-eye text-accent text-3xl"></i>
+                <span class="text-2xl font-semibold">RavenEye</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#products" class="hover:text-accent transition-colors duration-200">Products</a>
+                <a href="#technology" class="hover:text-accent transition-colors duration-200">Technology</a>
+                <a href="#waitlist" class="hover:text-accent transition-colors duration-200">Join Waitlist</a>
+                <a href="#contact" class="hover:text-accent transition-colors duration-200">Contact</a>
+            </div>
+            <button class="md:hidden text-xl text-gray-400 hover:text-gray-100 focus:outline-none focus:text-gray-100">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="gradient-bg hero-pattern pt-32 pb-24 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white animation-fadein">
+                        Autonomous <span class="text-accent">Electronic Warfare</span> Solutions
+                    </h1>
+                    <p class="text-lg mb-8 text-gray-300 animation-fadein" style="animation-delay: 0.2s;">
+                        RavenEye is revolutionizing defense with AI-driven drones and satellite constellations, delivering unparalleled electronic warfare and surveillance capabilities, even in the most challenging GPS-denied environments.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4 animation-fadein" style="animation-delay: 0.4s;">
+                        <a href="#waitlist"
+                            class="bg-accent hover:bg-accentLight text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent">
+                            Join Waitlist
+                        </a>
+                        <a href="#products"
+                            class="border border-accent text-accent hover:bg-accent hover:text-white px-6 py-3 rounded-md font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="placeholder_hero.jpg" alt="RavenEye autonomous drone in flight"
+                        class="rounded-lg shadow-2xl animation-fadein" style="animation-delay: 0.6s;" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-1/4 right-0 transform translate-x-1/4 -translate-y-1/4 w-64 h-64 rounded-full bg-gradient-to-br from-purple-500 to-transparent opacity-20 blur-3xl"></div>
+    </section>
+
+    <section id="products" class="py-24 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Our <span class="text-accent">Products</span></h2>
+                <p class="text-gray-400 text-lg">
+                    RavenEye's autonomous systems are engineered for superior performance and reliability in critical operations.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-900/50 p-8 rounded-2xl shadow-lg product-card animation-fadein" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-accent/10 p-3 rounded-full mr-4">
+                            <i class="fas fa-drone-alt text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white">RavenEye EW-Drone</h3>
+                    </div>
+                    <img src="placeholder_drone.jpg" alt="RavenEye electronic warfare drone"
+                        class="w-full rounded-lg mb-6" loading="lazy">
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>AI-powered autonomous decision-making for real-time electronic warfare responses.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Robust operation in GPS-denied environments with advanced inertial navigation.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Swarm capability for coordinated attacks and enhanced effectiveness.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>On-board anomaly detection and autonomous failover systems.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-900/50 p-8 rounded-2xl shadow-lg product-card animation-fadein" style="animation-delay: 0.4s;">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-accent/10 p-3 rounded-full mr-4">
+                            <i class="fas fa-satellite text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white">RavenEye Satellite Constellation</h3>
+                    </div>
+                    <img src="placeholder_satellite.jpg" alt="RavenEye satellite constellation"
+                        class="w-full rounded-lg mb-6" loading="lazy">
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Modular small satellite design for rapid deployment and mission adaptability.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>AI-driven reconnaissance for precise and timely intelligence gathering.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Autonomous task execution for complex surveillance and communication operations.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Real-time data processing and analysis for immediate decision support.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology" class="py-24 gradient-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Core <span class="text-accent">Technology</span></h2>
+                <p class="text-gray-400 text-lg">
+                    The foundation of RavenEye's superiority lies in these key technological advancements.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 shadow-md animation-fadein" style="animation-delay: 0.2s;">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Autonomous AI</h3>
+                    <p class="text-gray-300">
+                        Our proprietary AI enables real-time decision-making without human intervention, critical for rapid response in electronic warfare scenarios.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 shadow-md animation-fadein" style="animation-delay: 0.4s;">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">GPS-Denied Navigation</h3>
+                    <p class="text-gray-300">
+                        Advanced inertial and visual navigation systems ensure reliable operation in environments where GPS is unavailable or compromised.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800 shadow-md animation-fadein" style="animation-delay: 0.6s;">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Swarm Intelligence</h3>
+                    <p class="text-gray-300">
+                        Coordinated swarm behavior multiplies force effectiveness and distributes electronic warfare capabilities across multiple units.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="waitlist" class="py-24 bg-primary">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-gray-900/50 rounded-2xl shadow-2xl p-8 md:p-12 animation-fadein">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white mb-4">Join Our <span class="text xl font-bold text-white mb-4">Waitlist</span></h2>
+                    <p class="text-gray-400 text-lg">
+                        Secure your early access to RavenEye's revolutionary autonomous systems. Be at the forefront of defense technology.
+                    </p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                                required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                                required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="interest" class="block text-sm font-medium text-gray-300 mb-2">Primary Interest</label>
+                        <select id="interest"
+                            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                            required>
+                            <option value="" disabled selected>Select your interest</option>
+                            <option value="drone">EW-Drone Systems</option>
+                            <option value="satellite">Satellite Constellation</option>
+                            <option value="both">Both Products</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="consent" type="checkbox"
+                                class="w-4 h-4 bg-gray-800 border border-gray-700 rounded focus:ring-accent" required>
+                        </div>
+                        <label for="consent" class="ml-3 text-sm text-gray-300">
+                            I agree to receive updates and information about RavenEye products.
+                        </label>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-accent hover:bg-accentLight text-white font-medium py-3 px-4 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent">
+                        Join Waitlist
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Contact <span class="text-accent">Us</span></h2>
+                <p class="text-gray-400 text-lg">
+                    We're eager to connect with you. Reach out for inquiries, partnerships, or more information.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-900/50 rounded-2xl shadow-lg p-8 md:p-12 animation-fadein" style="animation-delay: 0.2s;">
+                    <h3 class="text-2xl font-semibold text-white mb-6">Get In Touch</h3>
+                    <p class="text-gray-300 mb-8">
+                        Our team is ready to answer your questions and explore how RavenEye can meet your specific needs.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-4"></i>
+                            <span class="text-gray-300">123 Advanced Technology Drive, Innovation City, CA 90210</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-accent mr-4"></i>
+                            <a href="mailto:info@raveneye.com" class="text-gray-300 hover:text-accent">info@raveneye.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-4"></i>
+                            <a href="tel:+15551234567" class="text-gray-300 hover:text-accent">+1 (555) 123-4567</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900/50 rounded-2xl shadow-lg p-8 md:p-12 animation-fadein" style="animation-delay: 0.4s;">
+                    <h3 class="text-2xl font-semibold text-white mb-6">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="contact-name"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                                required>
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-medium text-gray-300 mb-2">Your Email</label>
+                            <input type="email" id="contact-email"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                                required>
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-sm font-medium text-gray-300 mb-2">Your Message</label>
+                            <textarea id="contact-message" rows="4"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"
+                                required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-accent hover:bg-accentLight text-white font-medium py-3 px-4 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="gradient-bg py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                    <i class="fas fa-eye text-accent text-2xl"></i>
+                    <span class="text-xl font-semibold">RavenEye</span>
+                </div>
+
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-200">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors duration-200">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    </div>
+
+                <div class="text-gray-400 text-sm">
+                    &copy; 2023 RavenEye Technologies. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handler (Waitlist)
+        document.querySelector('#waitlist form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const interest = document.getElementById('interest').value;
+
+            // In a real implementation, you would send this data to your server using AJAX or fetch
+            console.log('Waitlist submission:', { name, email, interest });
+
+            // Show success message (replace with a more elegant modal or notification)
+            alert(`Thank you, ${name}! You've been added to our waitlist. We'll contact you at ${email} about ${interest} opportunities.`);
+
+            // Reset form
+            this.reset();
+        });
+
+        // Form submission handler (Contact)
+        document.querySelector('#contact form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const contactName = document.getElementById('contact-name').value;
+            const contactEmail = document.getElementById('contact-email').value;
+            const contactMessage = document.getElementById('contact-message').value;
+
+            // In a real implementation, you would send this data to your server using AJAX or fetch
+            console.log('Contact form submission:', { contactName, contactEmail, contactMessage });
+
+            // Show success message (replace with a more elegant modal or notification)
+            alert(`Thank you, ${contactName}! Your message has been sent. We'll get back to you soon.`);
+
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
